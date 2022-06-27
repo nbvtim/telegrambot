@@ -7,7 +7,7 @@ const TelegramApi = require('node-telegram-bot-api')
 const bot = new TelegramApi(token, {polling: true})
 
 const start = ()=>{
-    bot.setMyCommands([
+    bot.setMyCommands([ 
         {command: '/start', description: 'Приветствие'},
         {command: '/info', description: 'Информация'},
         {command: '/game', description: 'Игра'}   
