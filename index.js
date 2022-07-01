@@ -1,7 +1,6 @@
 let c = console.log
 const token = '5465151197:AAEo00Fhed2kh8jn_4T_0OYyvCoukbiwjkM'
-// npm i node-telegram-bot-api
-// npm i nodemon
+
 const TelegramApi = require('node-telegram-bot-api')
 
 const bot = new TelegramApi(token, {polling: true})
@@ -32,9 +31,9 @@ ${msg.chat.username}
 ${msg.date}
                                             `)}
         if(text === "/game"){
-            return bot.sendMessage(chatId, "Игра")
+            return bot.sendMessage(chatId, "Еще не создана")
         }
-        return bot.sendMessage(chatId, "ERROR")
+        return bot.sendMessage(chatId, "__err")
     })
     
 }
