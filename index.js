@@ -19,7 +19,7 @@ const start = ()=>{
         //bot.sendMessage(chatId, `Ты написал мне: \n${text}`)
         
         if(text === "/start"){
-           await bot.sendSticker(chatId,"1.jfif")
+           await bot.sendSticker(chatId,"1.jpeg")
            return bot.sendMessage(chatId, "Добро пожаловать в Телеграмм бот")
         }
 
