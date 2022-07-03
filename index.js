@@ -53,7 +53,7 @@ const start = ()=>{
 
         if(text === "/info"){
             // c(msg)
-            return bot.sendMessage(chatId, "console.log(msg)")
+            return bot.sendMessage(chatId, chatId)
         }
         if(text === "/game"){
            return startGame(chatId)
