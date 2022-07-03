@@ -31,7 +31,6 @@ const startGame = async (chatId)=>{
     const randomnumber = Math.floor(Math.random() *10)
     chats[chatId] = randomnumber
     await bot.sendMessage(chatId, `Отгадайте число`, gameOptions)
-
 }
 
 const start = ()=>{
@@ -53,7 +52,7 @@ const start = ()=>{
 
         if(text === "/info"){
             // c(msg)
-            return bot.sendMessage(chatId, chatId)
+            return bot.sendMessage(chatId, 'chatId: '+chatId)
         }
         if(text === "/game"){
            return startGame(chatId)
