@@ -30,7 +30,7 @@ const startGame = async (chatId)=>{
     await bot.sendMessage(chatId, "Сейчас я загадаю число от 0 до 9...")
     const randomnumber = Math.floor(Math.random() *10)
     chats[chatId] = randomnumber
-    await bot.sendMessage(chatId, `Отгадайте число ${randomnumber}`, gameOptions)
+    await bot.sendMessage(chatId, `Отгадайте число`, gameOptions)
 
 }
 
@@ -47,7 +47,7 @@ const start = ()=>{
         //bot.sendMessage(chatId, `Ты написал мне: \n${text}`)
         
         if(text === "/start"){
-           await bot.sendSticker(chatId,"1.jpeg")
+           await bot.sendSticker(chatId,"telegaworldbot.jfif")
            return bot.sendMessage(chatId, "Добро пожаловать в Телеграмм бот")
         }
 
