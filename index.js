@@ -5,7 +5,6 @@ const TelegramApi = require('node-telegram-bot-api')
 
 const bot = new TelegramApi(token, {polling: true})
 
-
 let chats = {}
 const gameOptions = {
     reply_markup: JSON.stringify({
@@ -51,7 +50,6 @@ const start = ()=>{
         }
 
         if(text === "/info"){
-            // c(msg)
             return bot.sendMessage(chatId, 'chatId: '+chatId)
         }
         if(text === "/game"){
@@ -73,7 +71,6 @@ const start = ()=>{
             return await bot.sendMessage(chatId, `НЕ отгадал ${data}`)
         }
     })
-    
 }
 start()
 // npm run dev
