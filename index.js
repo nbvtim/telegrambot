@@ -66,9 +66,9 @@ const start = ()=>{
             return startGame(chatId)
         }
         if( data == chats[chatId]){
-            return await bot.sendMessage(chatId, `Ты отгадал ${data}`, againOptions) 
+            return await bot.sendMessage(chatId, `!!! ВЕРНО !!! ${data}`, againOptions) 
         }else{
-            return await bot.sendMessage(chatId, `НЕ отгадал ${data}`)
+            return await bot.sendMessage(chatId, `неверное число ${data}`)
         }
     })
 }
