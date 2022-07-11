@@ -18,7 +18,7 @@ const gameOptions = {
     })
 }
 const againOptions = {
-    reply_markup: JSON.stringify({
+    reply_markup: JSON.stringify({ 
         inline_keyboard: [
             [{text: "Играть еще раз", callback_data: "/again"}]
         ]
