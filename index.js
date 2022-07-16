@@ -1,9 +1,9 @@
 let c = console.log
-const token = '5465151197:AAEo00Fhed2kh8jn_4T_0OYyvCoukbiwjkM'
+const TOKEN = '5465151197:AAEo00Fhed2kh8jn_4T_0OYyvCoukbiwjkM'
 
 const TelegramApi = require('node-telegram-bot-api')
 
-const bot = new TelegramApi(token, {polling: true})
+const bot = new TelegramApi(TOKEN, {polling: true})
 
 let chats = {}
 const gameOptions = {
