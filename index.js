@@ -1,4 +1,3 @@
-let c = console.log
 const TOKEN = '5465151197:AAEo00Fhed2kh8jn_4T_0OYyvCoukbiwjkM'
 
 const TelegramApi = require('node-telegram-bot-api')
@@ -73,4 +72,3 @@ const start = ()=>{
     })
 }
 start()
-// npm run dev
